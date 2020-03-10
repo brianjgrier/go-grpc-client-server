@@ -1,0 +1,22 @@
+// Generate by 
+// Google API's
+//
+// protoc challenge.proto --go_out=plugins=grpc:pkg/generated
+
+syntax = "proto3";
+
+package go_example;
+
+// A service which manipulates strings
+service StringManip { 
+    // A remote procedure call which accepts a StringRequest, reverses its member data, and returns the reversed string in StringResponse
+    rpc reverseIt(StringRequest) returns (StringResponse) {} 
+} 
+
+message StringRequest { 
+    string content = 1;
+}
+
+message StringResponse {
+    string content = 1; 
+}
