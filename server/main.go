@@ -7,7 +7,7 @@ import (
 	"net"
 
 	go_example "github.com/go-client-server/protobuf-src"
-
+	includes "github.com/go-client-server/imports"
 	"google.golang.org/grpc"
 )
 
@@ -42,7 +42,7 @@ func main() {
 
 func createServer() {
 
-	lis, err := net.Listen("tcp", listenHost+":"+listenPort)
+	lis, err := net.Listen("tcp",includes.ListenHost+":"+includes.ListenPort) 
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
 	}
