@@ -1,0 +1,19 @@
+#
+# This is a simple test to show how to create and use gRPC in place of REST or SOAP
+#
+# I have structued this as a typical go program, though it is so simple it could have been
+# placed in a single directory.
+#
+# This includes how to use:
+#   1) a common module for variables
+#   2) a protobuf file
+#   3) a Makefile to pull it all together
+#
+# You will need to have installed some version of 'go' and a version of 'protoc' that is 
+# compatible with your version of 'go'
+#
+# If you are building this on a Windows PC AND you want to use VSCode you will need two 
+# 'go' compilers installed. The first is for Ubuntu in your WSL installation and the second 
+# is for VSCode. Both should be the same version to avoid problems.
+#
+
